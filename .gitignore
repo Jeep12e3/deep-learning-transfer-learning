@@ -1,0 +1,19 @@
+# Dataset terunduh (jangan di-commit; ter-download otomatis oleh notebook)
+data/
+oxford-iiit-pet/
+
+# Cache Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Lingkungan
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Catatan: logs/ dan figures/ SENGAJA di-commit sebagai artefak verifikasi hasil.

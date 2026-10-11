@@ -1,0 +1,7 @@
+kode,kondisi,trainable_params,total_params,learning_rate,epoch_konvergen,durasi_latih_s,val_acc_terbaik,test_acc,test_macro_f1,seed,augmentasi,gen_gap_train_minus_val,arsitektur
+B1,From Scratch (random init),11181642,11181642,all=1e-3,4,115.8,0.4209,0.3523,0.3048,42,ya,,
+B2,Feature Extraction (freeze backbone),5130,11181642,fc=1e-3,18,286.2,0.9259,0.9195,0.9201,42,ya,,
+B3,"Progressive Fine-Tuning (layer4+fc, diff-LR)",8398858,11181642,layer4=1e-4; fc=1e-3,5,113.6,0.9529,0.9362,0.9363,42,ya,,
+B4-noaug,B3 tanpa augmentasi,8398858,11181642,layer4=1e-4; fc=1e-3,4,70.2,0.9529,0.9161,0.916,42,tidak,0.0471,
+B4-aug,B3 dengan augmentasi,8398858,11181642,layer4=1e-4; fc=1e-3,5,113.6,0.9529,0.9362,0.9363,42,ya,0.0777,
+B5,EfficientNet-B0 (fine-tune last block + head),424970,4020358,last_block+head=5e-4,8,156.0,0.9293,0.9195,0.919,42,ya,,EfficientNet-B0

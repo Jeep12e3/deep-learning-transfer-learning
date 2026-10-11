@@ -1,0 +1,9 @@
+ground_truth,prediksi,confidence
+Abyssinian,Bengal,0.9779
+British Shorthair,Bombay,0.9601
+Abyssinian,Bengal,0.9266
+British Shorthair,Bombay,0.9109
+American Bulldog,Beagle,0.9031
+Beagle,Basset Hound,0.8483
+Abyssinian,Bengal,0.8221
+Beagle,American Pit Bull Terrier,0.8147
